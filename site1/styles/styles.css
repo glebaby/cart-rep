@@ -1,0 +1,406 @@
+@font-face{
+	font-family: "Open Sans";
+	src:url('../fonts/OpenSans/ttf');	
+}
+@font-face{
+	font-family: "Huntsman";
+	src : url('../fonts/Huntsman.otf');
+}
+body,html{
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	color:#5e5e5e;
+	background-color:#FFFAFA; 
+}
+header{
+	width: 100%;
+	height: 50px;
+	padding: 10px 0;
+	background-color: black;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	background-size: cover;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+
+}
+footer{
+	z-index: 1;
+	width: 100%;
+	height: 50px;
+	padding: 10px 0;
+	background-color: black;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	background-size: cover;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+	position: fixed;
+	bottom: 0;
+}
+#content{
+	margin-bottom: -5%;
+}
+/*Настройки хедера*/
+#headerInside{
+	width: 80%;
+	margin: 0 auto;
+}
+#logo {
+	width:50px;
+	height: 50px;
+	float :left;
+	background: url('../images/origami-logo.svg') no-repeat;
+	background-size: contain;;
+}
+#companyName{
+	font-family: "Huntsman", sans-serif;
+	float: left;
+	margin-left: 15px;
+	font-size: 22px;
+	line-height: 50px;
+	color:#fff;
+}
+#navi{
+	align-items: center;
+	flex-direction: row;
+	height: 50px;
+	float: right;
+	display: flex;
+}
+#navi a{
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+	border-right : 1px solid rgba(255, 255, 255, 0.1);
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+	padding: 0 20px;
+	height: 70px;
+	line-height: 70px;
+	text-decoration: none;
+}
+#navi a:last-child{
+	border-left: none;
+}
+#navi a:hover {
+	background:#5e5e5e;
+}
+/*Контент футера*/
+#footerInside{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.aboutUs{
+	margin-left: auto;
+	margin-right: 0;
+}
+.info{
+	text-align:justify;
+	height: auto;
+	margin-bottom: 10%;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 1%;
+
+}
+/*Настройки страницы товаров*/
+.products{
+	float: left;
+    width: 24%;
+    height: 650px;
+    border: 1px solid rgba(225, 225, 225, 0.7);
+    margin-right: 3%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    position: relative;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.product{
+	color:black;
+	width: 35%;
+	height: auto;
+}
+#promo{
+	background: url('../images/background_index.jpg');
+	width: 100%;
+	height:600px;
+	background-size: cover;
+	text-align: right;
+	color: white;
+	margin-top: -20px;
+}
+#head h2{
+
+	margin-right: 2%;
+}
+#head h3{
+	margin-right: 5%;
+}
+h1{
+	text-align: center;
+}
+.products img{
+	width: 100%;
+    height: 300px;
+}
+#contentShop{
+	margin-bottom: 20%;
+	background-color: black;
+}
+.productDesc{
+	text-align: justify;
+}
+.more a{
+	width: 94%;
+	border: none;
+    padding: 5px 15px;
+    background-color: #696969;
+    display: block;
+    text-align: center;
+    color: #e6e09a;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+.more a:hover{
+	    color: #fff;
+    background-color: #777777;
+}
+/*Контент детальной страницы товара*/
+.openedProduct-img {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+}
+.openedProduct-img img {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.7);
+}
+
+#openedProduct-content {
+	margin-bottom: 15%;
+    float: left;
+    width: 67%;
+}
+
+#openedProduct-name {
+    font-family: Exo, sans-serif;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+#openedProduct-desc {
+    margin-top: 20px;
+}
+
+#openedProduct-price {
+    margin-top: 10px;
+    color: #6a6747;
+    font-weight: bold;
+}
+#copyrights {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+#openedProduct{
+	margin-top: 20px;
+}
+/*Кнопки на детальной станице товара*/
+.bottom a{
+	margin-top: 10px;
+	border: none;
+    padding: 5px 15px;
+    background-color: #696969;
+    text-align: center;
+    color: #e6e09a;
+    width: 20%;
+    text-decoration: none;
+   	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.bottom a:hover{
+	color: #fff;
+	background:#5e5e5e;
+}
+.bottoms div{
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+/* Стили для адаптивной верстки */
+@media( max-width: 928px)
+{
+	.more a{
+		width: 87%;
+		border: none;
+	    padding: 5px 15px;
+	    background-color: #696969;
+	    display: block;
+	    text-align: center;
+	    color: #e6e09a;
+	    text-decoration: none;
+	    position: absolute;
+	    bottom: 0;
+	}
+	#content{
+		margin-bottom: 0%;
+}
+}
+/*Пол экрана*/
+@media( max-width: 600px)
+{
+	.openedProduct-img {
+	    width: 80%;
+	    margin-right: 10%;
+	    margin-left: 10%
+	}
+	#openedProduct-content {
+		margin-bottom: 20%;
+		margin-left: 10%;
+	    width: 80%;
+	}
+	.products{
+		float: left;
+	    width: 40%;
+	    height: 700px;
+	    border: 1px solid rgba(225, 225, 225, 0.7);
+	    margin-right: 3%;
+	    margin-left: 5%;
+	    margin-bottom: 20%;
+	    position: relative;
+	}
+	header{
+		width: 100%;
+		height: 100px;
+		padding: 10px 0;
+		background-color: black;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		background-size: cover;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+	}
+}
+/*Для горизонтальной ориентации телефона*/
+@media( max-width: 625px)
+{
+	#content{
+		margin-bottom: 20%;
+	}
+	.openedProduct-img {
+	    width: 80%;
+	    margin-right: 10%;
+	    margin-left: 10%
+	}
+	#openedProduct-content {
+		margin-bottom: 20%;
+		margin-left: 10%;
+	    width: 80%;
+	}
+	header{
+		width: 100%;
+		height: 100px;
+		padding: 10px 0;
+		background-color: black;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		background-size: cover;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+	}
+	footer{
+		width: 100%;
+		height: 20%;
+		padding: 10px 0;
+		background-color: black;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		background-size: cover;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+		position: fixed;
+		bottom: 0;
+	}
+	.products{
+		float: left;
+	    width: 40%;
+	    height: 700px;
+	    border: 1px solid rgba(225, 225, 225, 0.7);
+	    margin-right: 3%;
+	    margin-left: 5%;
+	    margin-bottom: 20%;
+	    position: relative;
+	}
+	.more a{
+		width: 88%;
+		border: none;
+	    padding: 5px 15px;
+	    background-color: #696969;
+	    display: block;
+	    text-align: center;
+	    color: #e6e09a;
+	    text-decoration: none;
+	    position: absolute;
+	    bottom: 0;
+	}
+	#promo{
+		background: url('../images/background_index.jpg');
+		width: 100%;
+		height:300px;
+		background-size: cover;
+		text-align: right;
+		font-size: 12px;
+		color: white;
+		margin-top: -20px;
+	}
+	.info{
+		text-align:justify;
+		margin-bottom: 0%;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	#navi{
+		align-items: center;
+		flex-direction: row;
+		height: 40px;
+		float: right;
+		display: flex;
+}
+}
+/*Для вертикальной ориентации телефона*/
+@media( max-width: 360px){
+	.products{
+		float: left;
+	    width: 40%;
+	    height: 800px;
+	    border: 1px solid rgba(225, 225, 225, 0.7);
+	    margin-right: 3%;
+	    margin-left: 5%;
+	    margin-bottom: 35%;
+	    position: relative;
+	}
+	.products img{
+		width: 90%;
+		height: 220px;
+		padding-left: 5%;
+	}
+	.more a{
+		width: 80%;
+		border: none;
+	    padding: 5px 15px;
+	    background-color: #696969;
+	    display: block;
+	    text-align: center;
+	    color: #e6e09a;
+	    text-decoration: none;
+	    position: absolute;
+	    bottom: 0;
+	}
+	.info{
+		text-align:justify;
+		height: auto;
+		margin-bottom: 35%;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	#openedProduct-content {
+		margin-bottom: 35%;
+		margin-left: 10%;
+	    width: 80%;
+	}
+}
+
